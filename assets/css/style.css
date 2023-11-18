@@ -1,0 +1,263 @@
+body {
+  font-family: 'Base', sans-serif;;
+  color: #fff;
+  background-color: #D52226;;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size:contain;
+}
+
+
+@font-face {
+  font-family: 'Base'; /* Name your font */
+  src: url('introrust-base.otf') format('opentype'); /* Specify the path to your font file */
+  /* Additional font properties can be added, like font-weight or font-style if needed */
+}
+
+a,b {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family:'Base', sans-serif;;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #FFFFFF;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+.back-to-top i {
+  font-size: 28px;
+  color: #D52226;
+  line-height: 0;
+}
+.back-to-top:hover {
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.text-center{
+  font-family: 'Base', sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+ 
+}
+
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+}
+
+.section-bg {
+  background-color: #D52226;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title .text-center {
+  font-size: 50px;
+}
+.section-title h2 {
+  margin: 15px 0 0 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #89CBDB;
+}
+.section-title h2 span {
+  color: #57605b;
+}
+.section-title p {
+  margin: 15px auto 0 auto;
+  font-weight: 300;
+}
+@media (min-width: 1024px) {
+  .section-title p {
+    width: 50%;
+  }
+}
+
+
+
+/*--------------------------------------------------------------
+# Menu Section
+--------------------------------------------------------------*/
+.menu #menu-flters {
+  padding: 0;
+  margin: 0 auto 0 auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 50px;
+}
+.menu #menu-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 16px 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  color: #fff;
+  margin: 0 3px 10px 3px;
+  transition: all ease-in-out 0.3s;
+  background: none;
+  border: 2px solid #FFFFFF;
+  border-radius: 50px;
+}
+.menu #menu-flters li:hover, .menu #menu-flters li.filter-active {
+  color: #D52226;;
+  background: #FFFFFF;
+}
+.menu #menu-flters li:last-child {
+  margin-right: 0;
+}
+.menu .menu-content {
+  margin-top: 30px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-right: 10px;
+  position: relative;
+  z-index: 3;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.5mm;
+  font-family:  'DM Sans', sans-serif;
+}
+.menu .menu-content::after {
+  position: absolute;
+  left: 20px;
+  right: 0;
+  top: -4px;
+  z-index: 1;
+  color: #dad8d4;
+  font-family:'DM Sans', "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.menu .menu-content span {
+  position: relative;
+  z-index: 3;
+  padding: 0 10px;
+  font-weight: 600;
+}
+.menu .menu-ingredients {
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif; 
+  color: #fff;
+}
+
+.text-center{
+  color:#6F5242;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: none;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+  font-family: 'DM Sans',Arial, Helvetica, sans-serif;
+}
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #57605b;
+  position: relative;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: none;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+#footer .social-links a:hover {
+  background: none;
+}
+#footer .copyright {
+  margin: 0 0 5px 0;
+  font-family: 'Base';
+}
+#footer .credits {
+  font-size: 13px;
+  font-family: 'Base';
+}
+
+/*----------------------------------------------------------------------
+DASHED LINE
+-------------------------------------------------------------------*/
+
+.dashed-line {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  border-top: 5px dashed #FFFFFF;
+  /* Replace #000000 with your desired color */
+  z-index: 9999;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.Full-line {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  border-top: 5px solid #FFFFFF;
+  /* Replace #000000 with your desired color */
+  z-index: 9999;
+  width: 100%;
+  margin-bottom: 2%;
+}
